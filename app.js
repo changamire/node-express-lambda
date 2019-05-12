@@ -5,7 +5,7 @@ const app = express();
 
 app.get('/', (req, res) => {
   res.send(req.query.count ? pi(req.query.count) : pi(10000))
-)};
+});
 
 pi = (count) => {
   let inside = 0;
